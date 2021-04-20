@@ -4,5 +4,5 @@ A new Flutter package for easier and simpler usage of widgets
 
 ## Getting Started
 
-This project is a in development
+This project is in development mode
 
