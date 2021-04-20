@@ -2,7 +2,7 @@ name: easy_widget
 description: A new Flutter package for easier usage of widgets
 version: 0.0.1
 author: Sharath V Bhargav <sharathbhargav15@gmail.com>
-homepage:
+homepage: https://github.com/sharathvbhargav/EasyWidget
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
