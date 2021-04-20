@@ -1,6 +1,6 @@
-name: easy_widget
+name: svb_easy_widget
 description: A new Flutter package for easier usage of widgets
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/sharathvbhargav/EasyWidget
 
 environment:
