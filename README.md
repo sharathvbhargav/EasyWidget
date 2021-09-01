@@ -9,7 +9,7 @@ This use this plugin follow the steps below
 1. Add the following code in pubspec.yaml
 
         dependencies:
-          svb_easy_widget: ^0.0.2
+          svb_easy_widget: ^0.0.3
           
           
 2. Import the file in the .dart file where you want use the widget
@@ -18,7 +18,11 @@ This use this plugin follow the steps below
         
 3. Use the following code block as a widget
 
-        EditText(
+        //Use this as Global declaration
+        EditText editText;
+        
+        //Assign the widget to the global variable
+        editText = EditText(
             controller: null,
             hintText: "Hello Dude",
             margin: EdgeInsets.fromLTRB(100, 100, 0, 0),
@@ -26,7 +30,9 @@ This use this plugin follow the steps below
             height: 50,
         ),
       
-4. You can pass a "TextEditingController();" to get entered text
+4. Call the following method on button click or any action wher eyou want to get text
+
+        editText.getText();
 
 Note: New features on this widget is work in progress update when its available
 
