@@ -17,12 +17,9 @@ class EditText extends StatefulWidget {
   final TextInputAction action;
   final bool isPassword;
   final Color fillingColor;
-  final controller;
+  TextEditingController controller;
 
   EditText({Key key,
-    @required
-    this.controller,
-
     this.hintText,
     this.margin,
     this.hintStyle,
@@ -45,8 +42,11 @@ class EditText extends StatefulWidget {
 
   @override
   MediaQueryData getScreenInfo(BuildContext context) {
-
     throw UnimplementedError();
+  }
+
+  String getText(){
+    return controller.text;
   }
 }
 
@@ -95,3 +95,4 @@ class _EditTextState extends State<EditText> {
     );
   }
 }
+
