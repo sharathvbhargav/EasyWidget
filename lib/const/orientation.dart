@@ -1,0 +1,4 @@
+enum LayoutOrientation {
+  horizontal,
+  vertical
+}
