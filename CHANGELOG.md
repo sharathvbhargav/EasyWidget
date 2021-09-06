@@ -1,6 +1,11 @@
+## [0.0.5] - Release
+
+* Added new widget Button
+* Bugs fixes in Linear layout
+
 ## [0.0.4] - Release
 
-* New widget is added
+* New widget Linear Layout added
 
 ## [0.0.3] - Release
 

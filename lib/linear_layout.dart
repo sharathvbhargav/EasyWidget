@@ -14,9 +14,7 @@ class LinearLayout extends StatefulWidget {
 
   const LinearLayout({
     Key key,
-    @required
     this.height,
-    @required
     this.width,
     this.margin,
     this.padding,
@@ -42,13 +40,12 @@ class _LinearLayoutState extends State<LinearLayout> {
           margin: widget.margin ?? EdgeInsets.all(0),
           padding: widget.padding ?? EdgeInsets.all(0),
           child: Row(
-              children: widget.widgets
+            children: widget.widgets
           ),
         );
       }
       else {
         return Container(
-          color: widget.backgroundColor ?? Colors.white,
           width: widget.width,
           height: widget.height,
           margin: widget.margin ?? EdgeInsets.all(0),
@@ -57,6 +54,7 @@ class _LinearLayoutState extends State<LinearLayout> {
             children: widget.widgets
           ),
           decoration: BoxDecoration(
+            color: widget.backgroundColor ?? Colors.white,
             image: DecorationImage(
               image: AssetImage(widget.backgroundImage),
               fit: BoxFit.cover,
@@ -79,19 +77,19 @@ class _LinearLayoutState extends State<LinearLayout> {
       }
       else {
         return Container(
-            color: widget.backgroundColor ?? Colors.white,
             width: widget.width,
             height: widget.height,
             margin: widget.margin ?? EdgeInsets.all(0),
             padding: widget.padding ?? EdgeInsets.all(0),
             child: Column(
-                children: widget.widgets
+              children: widget.widgets
             ),
             decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(widget.backgroundImage),
-                  fit: BoxFit.cover,
-                )
+              color: widget.backgroundColor ?? Colors.white,
+              image: DecorationImage(
+                image: AssetImage(widget.backgroundImage),
+                fit: BoxFit.cover,
+              )
             )
         );
       }
